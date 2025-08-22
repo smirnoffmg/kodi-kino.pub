@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kino.pub Kodi Addon\n"
+"Report-Msgid-Bugs-To: https://github.com/smirnoffmg/kodi-kino.pub/issues\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: 2024-01-01 12:00+0000\n"
+"Last-Translator: smirnoffmg\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Settings
+msgid "Auto"
+msgstr "Auto"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "480p"
+msgstr "480p"
+
+msgid "Russian"
+msgstr "Russian"
+
+msgid "English"
+msgstr "English"
+
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+msgid "Dark"
+msgstr "Dark"
+
+msgid "Light"
+msgstr "Light"
+
+msgid "Parental Controls"
+msgstr "Parental Controls"
+
+msgid "Auto Login"
+msgstr "Auto Login"
+
+msgid "Enable Cache"
+msgstr "Enable Cache"
+
+msgid "Cache Duration (seconds)"
+msgstr "Cache Duration (seconds)"
+
+# Authentication
+msgid "Authentication Error"
+msgstr "Authentication Error"
+
+msgid "Failed to start authentication"
+msgstr "Failed to start authentication"
+
+msgid "Device Activation Required"
+msgstr "Device Activation Required"
+
+msgid "Please visit"
+msgstr "Please visit"
+
+msgid "Enter this code"
+msgstr "Enter this code"
+
+msgid "Waiting for Activation"
+msgstr "Waiting for Activation"
+
+msgid "Please complete activation on the website"
+msgstr "Please complete activation on the website"
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Authentication successful"
+msgstr "Authentication successful"
+
+msgid "Authentication Failed"
+msgstr "Authentication Failed"
+
+msgid "Please try again"
+msgstr "Please try again"
+
+# Main Menu
+msgid "Movies"
+msgstr "Movies"
+
+msgid "TV Shows"
+msgstr "TV Shows"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "TV Channels"
+msgstr "TV Channels"
+
+msgid "Genres"
+msgstr "Genres"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Open"
+msgstr "Open"
+
+# Search
+msgid "Enter search term"
+msgstr "Enter search term"
+
+# Error Messages
+msgid "Error"
+msgstr "Error"
+
+msgid "Failed to load channels"
+msgstr "Failed to load channels"
+
+msgid "Failed to load genres"
+msgstr "Failed to load genres"
+
+msgid "Failed to load content"
+msgstr "Failed to load content"
+
+msgid "No results found"
+msgstr "No results found"
+
+# Context Menu
+msgid "Add to Watchlist"
+msgstr "Add to Watchlist"
+
+msgid "Show Details"
+msgstr "Show Details"
+
+msgid "Play with Quality Selection"
+msgstr "Play with Quality Selection"

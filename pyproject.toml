@@ -1,0 +1,136 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kodi-kinopub-addon"
+version = "1.0.0"
+description = "Modern Kodi addon for Kino.pub streaming service"
+readme = "README.md"
+license = { text = "GPL-3.0" }
+authors = [{ name = "smirnoffmg", email = "smirnoffmg@gmail.com" }]
+maintainers = [{ name = "smirnoffmg", email = "smirnoffmg@gmail.com" }]
+keywords = ["kodi", "addon", "streaming", "kinopub", "video"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.11"
+dependencies = ["requests>=2.25.1"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-benchmark>=4.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "types-requests>=2.31.0",
+    "Kodistubs>=21.0.0",
+    "kodi-json>=0.0.1",
+]
+test = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "pytest-benchmark>=4.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/smirnoffmg/kodi-kino.pub"
+Documentation = "https://github.com/smirnoffmg/kodi-kino.pub#readme"
+Repository = "https://github.com/smirnoffmg/kodi-kino.pub"
+"Bug Tracker" = "https://github.com/smirnoffmg/kino.pub/issues"
+Discussions = "https://github.com/smirnoffmg/kodi-kino.pub/discussions"
+
+[tool.setuptools.packages.find]
+where = ["lib"]
+
+[tool.setuptools.package-data]
+"*" = ["*.py", "*.xml", "*.po"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501", # line too long, handled by black
+    "B008", # do not perform function calls in argument defaults
+    "C901", # too complex
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/conftest.py" = [
+    "F401",
+] # Allow unused imports for Kodi module availability testing
+"lib/api.py" = [
+    "B011", # do not call assert False since Python -O removes these calls
+    "B010", # do not call setattr with a constant attribute value
+] # Kodi-specific code patterns
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+exclude = ["tests/.*"]
+
+[[tool.mypy.overrides]]
+module = "lib.api"
+warn_unreachable = false
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["lib"]
+omit = ["*/tests/*", "*/test_*", "*/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[dependency-groups]
+dev = ["kodi-json>=1.0.0", "kodistubs>=21.0.0"]
+
+[project.scripts]
+kinopub-test = "api_test:main"

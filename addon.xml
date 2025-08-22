@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kinopub" name="Kino.pub" version="1.0.0" provider-name="smirnoffmg">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.codequick" version="0.0.1"/>
+    <import addon="script.module.requests" version="2.25.1"/>
+  </requires>
+  
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Modern Kodi addon for Kino.pub streaming service</summary>
+    <summary lang="ru">Современный аддон Kodi для стримингового сервиса Kino.pub</summary>
+    <summary lang="uk">Сучасний аддон Kodi для стрімінгового сервісу Kino.pub</summary>
+    
+    <description lang="en">Next-generation Kodi addon for Kino.pub streaming service. Built with Python 3.11+, featuring Netflix-style UI, lightning-fast performance, and cutting-edge development practices.</description>
+    <description lang="ru">Аддон нового поколения для Kodi для стримингового сервиса Kino.pub. Построен на Python 3.11+ с Netflix-стилем интерфейса, молниеносной производительностью и передовыми практиками разработки.</description>
+    <description lang="uk">Аддон нового покоління для Kodi для стрімінгового сервісу Kino.pub. Побудований на Python 3.11+ з Netflix-стилем інтерфейсу, блискавичною продуктивністю та передовими практиками розробки.</description>
+    
+    <disclaimer lang="en">This addon is not affiliated with Kino.pub. Use at your own risk.</disclaimer>
+    <disclaimer lang="ru">Этот аддон не связан с Kino.pub. Используйте на свой страх и риск.</disclaimer>
+    <disclaimer lang="uk">Цей аддон не пов'язаний з Kino.pub. Використовуйте на свій страх і ризик.</disclaimer>
+    
+    <platform>all</platform>
+    <language>en</language>
+    <language>ru</language>
+    <language>uk</language>
+    
+    <license>GPL-3.0</license>
+    <forum>https://github.com/smirnoffmg/kodi-kino.pub/discussions</forum>
+    <website>https://github.com/smirnoffmg/kodi-kino.pub</website>
+    <source>https://github.com/smirnoffmg/kodi-kino.pub</source>
+    <email>smirnoffmg@gmail.com</email>
+    
+    <news lang="en">v1.0.0 - Initial release with Netflix-style UI and OAuth 2.0 authentication</news>
+    <news lang="ru">v1.0.0 - Первый релиз с Netflix-стилем интерфейса и OAuth 2.0 аутентификацией</news>
+    <news lang="uk">v1.0.0 - Перший реліз з Netflix-стилем інтерфейсу та OAuth 2.0 аутентифікацією</news>
+  </extension>
+  
+  <extension point="xbmc.addon.settings" id="settings">
+    <setting id="video_quality" type="select" label="30001" default="auto">
+      <option label="30002">auto</option>
+      <option label="30003">4k</option>
+      <option label="30004">1080p</option>
+      <option label="30005">720p</option>
+      <option label="30006">480p</option>
+    </setting>
+    <setting id="subtitle_language" type="select" label="30007" default="ru">
+      <option label="30008">ru</option>
+      <option label="30009">en</option>
+      <option label="30010">uk</option>
+    </setting>
+    <setting id="interface_theme" type="select" label="30011" default="dark">
+      <option label="30012">dark</option>
+      <option label="30013">light</option>
+    </setting>
+    <setting id="parental_controls" type="bool" label="30014" default="false"/>
+    <setting id="auto_login" type="bool" label="30015" default="true"/>
+    <setting id="cache_enabled" type="bool" label="30016" default="true"/>
+    <setting id="cache_duration" type="number" label="30017" default="3600" min="300" max="86400"/>
+  </extension>
+</addon>

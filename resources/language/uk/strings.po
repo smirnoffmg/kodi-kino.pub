@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kino.pub Kodi Addon\n"
+"Report-Msgid-Bugs-To: https://github.com/smirnoffmg/kodi-kino.pub/issues\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: 2024-01-01 12:00+0000\n"
+"Last-Translator: smirnoffmg\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+# Settings
+msgid "Auto"
+msgstr "Авто"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "480p"
+msgstr "480p"
+
+msgid "Russian"
+msgstr "Російська"
+
+msgid "English"
+msgstr "Англійська"
+
+msgid "Ukrainian"
+msgstr "Українська"
+
+msgid "Dark"
+msgstr "Темна"
+
+msgid "Light"
+msgstr "Світла"
+
+msgid "Parental Controls"
+msgstr "Батьківський контроль"
+
+msgid "Auto Login"
+msgstr "Автоматичний вхід"
+
+msgid "Enable Cache"
+msgstr "Увімкнути кеш"
+
+msgid "Cache Duration (seconds)"
+msgstr "Час кешування (секунди)"
+
+# Authentication
+msgid "Authentication Error"
+msgstr "Помилка аутентифікації"
+
+msgid "Failed to start authentication"
+msgstr "Не вдалося запустити аутентифікацію"
+
+msgid "Device Activation Required"
+msgstr "Потрібна активація пристрою"
+
+msgid "Please visit"
+msgstr "Будь ласка, відвідайте"
+
+msgid "Enter this code"
+msgstr "Введіть цей код"
+
+msgid "Waiting for Activation"
+msgstr "Очікування активації"
+
+msgid "Please complete activation on the website"
+msgstr "Будь ласка, завершіть активацію на сайті"
+
+msgid "Success"
+msgstr "Успіх"
+
+msgid "Authentication successful"
+msgstr "Аутентифікація успішна"
+
+msgid "Authentication Failed"
+msgstr "Аутентифікація не вдалася"
+
+msgid "Please try again"
+msgstr "Будь ласка, спробуйте ще раз"
+
+# Main Menu
+msgid "Movies"
+msgstr "Фільми"
+
+msgid "TV Shows"
+msgstr "Серіали"
+
+msgid "Search"
+msgstr "Пошук"
+
+msgid "TV Channels"
+msgstr "ТВ канали"
+
+msgid "Genres"
+msgstr "Жанри"
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Open"
+msgstr "Відкрити"
+
+# Search
+msgid "Enter search term"
+msgstr "Введіть пошуковий запит"
+
+# Error Messages
+msgid "Error"
+msgstr "Помилка"
+
+msgid "Failed to load channels"
+msgstr "Не вдалося завантажити канали"
+
+msgid "Failed to load genres"
+msgstr "Не вдалося завантажити жанри"
+
+msgid "Failed to load content"
+msgstr "Не вдалося завантажити контент"
+
+msgid "No results found"
+msgstr "Результати не знайдено"
+
+# Context Menu
+msgid "Add to Watchlist"
+msgstr "Додати до списку перегляду"
+
+msgid "Show Details"
+msgstr "Показати деталі"
+
+msgid "Play with Quality Selection"
+msgstr "Відтворити з вибором якості"

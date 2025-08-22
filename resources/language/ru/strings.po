@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kino.pub Kodi Addon\n"
+"Report-Msgid-Bugs-To: https://github.com/smirnoffmg/kodi-kino.pub/issues\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: 2024-01-01 12:00+0000\n"
+"Last-Translator: smirnoffmg\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+# Settings
+msgid "Auto"
+msgstr "Авто"
+
+msgid "4K"
+msgstr "4K"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "480p"
+msgstr "480p"
+
+msgid "Russian"
+msgstr "Русский"
+
+msgid "English"
+msgstr "Английский"
+
+msgid "Ukrainian"
+msgstr "Украинский"
+
+msgid "Dark"
+msgstr "Темная"
+
+msgid "Light"
+msgstr "Светлая"
+
+msgid "Parental Controls"
+msgstr "Родительский контроль"
+
+msgid "Auto Login"
+msgstr "Автоматический вход"
+
+msgid "Enable Cache"
+msgstr "Включить кэш"
+
+msgid "Cache Duration (seconds)"
+msgstr "Время кэширования (секунды)"
+
+# Authentication
+msgid "Authentication Error"
+msgstr "Ошибка аутентификации"
+
+msgid "Failed to start authentication"
+msgstr "Не удалось запустить аутентификацию"
+
+msgid "Device Activation Required"
+msgstr "Требуется активация устройства"
+
+msgid "Please visit"
+msgstr "Пожалуйста, посетите"
+
+msgid "Enter this code"
+msgstr "Введите этот код"
+
+msgid "Waiting for Activation"
+msgstr "Ожидание активации"
+
+msgid "Please complete activation on the website"
+msgstr "Пожалуйста, завершите активацию на сайте"
+
+msgid "Success"
+msgstr "Успех"
+
+msgid "Authentication successful"
+msgstr "Аутентификация успешна"
+
+msgid "Authentication Failed"
+msgstr "Аутентификация не удалась"
+
+msgid "Please try again"
+msgstr "Пожалуйста, попробуйте снова"
+
+# Main Menu
+msgid "Movies"
+msgstr "Фильмы"
+
+msgid "TV Shows"
+msgstr "Сериалы"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "TV Channels"
+msgstr "ТВ каналы"
+
+msgid "Genres"
+msgstr "Жанры"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Open"
+msgstr "Открыть"
+
+# Search
+msgid "Enter search term"
+msgstr "Введите поисковый запрос"
+
+# Error Messages
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Failed to load channels"
+msgstr "Не удалось загрузить каналы"
+
+msgid "Failed to load genres"
+msgstr "Не удалось загрузить жанры"
+
+msgid "Failed to load content"
+msgstr "Не удалось загрузить контент"
+
+msgid "No results found"
+msgstr "Результаты не найдены"
+
+# Context Menu
+msgid "Add to Watchlist"
+msgstr "Добавить в список просмотра"
+
+msgid "Show Details"
+msgstr "Показать детали"
+
+msgid "Play with Quality Selection"
+msgstr "Воспроизвести с выбором качества"

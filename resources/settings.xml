@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30050">
+        <setting id="video_quality" type="select" label="30001" default="auto">
+            <option label="30002">auto</option>
+            <option label="30003">4k</option>
+            <option label="30004">1080p</option>
+            <option label="30005">720p</option>
+            <option label="30006">480p</option>
+        </setting>
+        <setting id="subtitle_language" type="select" label="30007" default="ru">
+            <option label="30008">ru</option>
+            <option label="30009">en</option>
+            <option label="30010">uk</option>
+        </setting>
+    </category>
+    
+    <category label="30051">
+        <setting id="interface_theme" type="select" label="30011" default="dark">
+            <option label="30012">dark</option>
+            <option label="30013">light</option>
+        </setting>
+        <setting id="parental_controls" type="bool" label="30014" default="false"/>
+    </category>
+    
+    <category label="30052">
+        <setting id="auto_login" type="bool" label="30015" default="true"/>
+        <setting id="cache_enabled" type="bool" label="30016" default="true"/>
+        <setting id="cache_duration" type="number" label="30017" default="3600" min="300" max="86400"/>
+    </category>
+    
+    <category label="30053">
+        <setting id="reset_settings" type="action" label="30054" action="RunScript(plugin.video.kinopub,reset_settings)"/>
+        <setting id="clear_cache" type="action" label="30055" action="RunScript(plugin.video.kinopub,clear_cache)"/>
+        <setting id="about" type="action" label="30056" action="RunScript(plugin.video.kinopub,about)"/>
+    </category>
+</settings>
